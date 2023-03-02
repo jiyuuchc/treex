@@ -165,7 +165,7 @@ class Module(Treex, Filters, metaclass=ModuleMeta):
                     else initializer
                 ),
                 is_leaf=lambda x: isinstance(x, types.Initializer),
-                inplace=True,
+                # inplace=True,
             )
 
             def call_rng_init(module: Module):
